@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import SoccerData from './api/SoccerData';
 import './App.scss';
+import PlayerDisplay from './player/PlayerDisplay';
 
 class App extends Component {
   constructor() {
@@ -23,6 +24,7 @@ class App extends Component {
       <div className='App'>
         <SoccerData setPlayers={this.setPlayers} />
         <Navbar />
+        <PlayerDisplay players={this.state.players} />
       </div>
     );
   }
