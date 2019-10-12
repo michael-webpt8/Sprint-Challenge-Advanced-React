@@ -14,4 +14,6 @@
 
 * These are normal javascript functions which can use other hooks inside of it and contain a common stateful logic that can be reused within multiple components. These functions are prefixed with the word use.
 
-* [ ] Why is it important to test our apps?
+* [x] Why is it important to test our apps?
+
+* To keep our app less fragile when adding new code, through regression, and to help make our code more scalable.
