@@ -2,7 +2,7 @@ import { useLocalStorage } from './useLocalStorage';
 import { useEffect } from 'react';
 
 function useDarkMode() {
-  const [darkMode, setDarkMode] = useLocalStorage('toggle', false);
+  const [darkMode, setDarkMode] = useLocalStorage('womensWorldCup', false);
 
   useEffect(() => {
     const append = document.querySelector('body');
