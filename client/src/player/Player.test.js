@@ -5,7 +5,7 @@ import Player from './Player';
 
 afterEach(rtl.cleanup);
 
-test('Player exists', () => {
+test('Player exists', async () => {
   const { queryByTestId, queryByText } = rtl.render(<Player />);
 
   expect(queryByTestId(/player-data/i)).toBeTruthy();
