@@ -11,4 +11,5 @@
 1. componentWillUnmount() => is invoked immediately before a component is unmounted and destroyed. Perform any necessary cleaning up any subscriptions that were created in componentDidMount().
 
 - [ ] What is the purpose of a custom hook?
-- [ ] Why is it important to test our apps?
+
+* [ ] Why is it important to test our apps?
