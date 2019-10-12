@@ -10,18 +10,18 @@ function PlayerDisplay(props) {
   if (!player) return <h3>Loading...</h3>;
   return (
     <>
-      {player.map(person => {
-        return (
-          <div className='player-display'>
+      <div className='player-display'>
+        {player.map(person => {
+          return (
             <Player
               key={person.id}
               name={person.name}
               country={person.country}
               searches={person.searches}
             />
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </>
   );
 }
