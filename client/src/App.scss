@@ -51,3 +51,14 @@
     border: none;
   }
 }
+
+.player-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player {
+  border: 1px solid black;
+  width: 25%;
+}
