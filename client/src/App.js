@@ -17,11 +17,6 @@ class App extends Component {
       players: data
     });
   };
-  componentDidMount() {
-    let player = this.state.players;
-  }
-
-  componentWillUnmount() {}
 
   render() {
     console.log('p', this.state.players);
