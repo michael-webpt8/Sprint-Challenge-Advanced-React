@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Navbar from './Navbar';
+import SoccerData from './api/SoccerData';
+import './App.scss';
+import PlayerDisplay from './player/PlayerDisplay';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      players: []
+    };
+  }
+
+  setPlayers = data => {
+    this.setState({
+      players: data
+    });
+  };
+
+  render() {
+    console.log('p', this.state.players);
+    return (
+      <div className='App'>
+        <SoccerData setPlayers={this.setPlayers} />
+        <Navbar />
+        <PlayerDisplay players={this.state.players} />
+      </div>
+    );
+  }
 }
 
 export default App;
